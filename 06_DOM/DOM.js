@@ -1,0 +1,1 @@
+// HTML collection array ki tarah dikhta hai but array hota nahi hai.

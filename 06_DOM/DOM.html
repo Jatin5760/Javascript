@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css" class="stylesheet">
+    <title>DOM Learning</title>
+</head>
+<body class = "bg-black">
+    <div>
+        <h1 id="Head" class = "text"> DOM Learning on chai aur code</h1>
+        <p class = "text">Lorem ipsum dolor sit amet.</p>
+        <h2>Lorem, ipsum dolor.</h2>
+        <h2>Lorem, ipsum dolor.</h2>
+        <h2>Lorem, ipsum dolor.</h2>
+
+    </div>
+    
+    <script>
+        document.getElementById('Head').innerHTML = "Jatin"
+        Head.style.backgroundColor = "green"
+        Head.style.padding = "20px"
+        Head.style.borderRadius = "10px"
+        
+        //Head.textContent - Sara ke sara content visible hoga, Even agar user ne hata diya hai tab bhi.
+        //Head.innerHTML - Ye pura HTML ka value de raha hai.
+        //Head.innerText - Sirf visible content dikhega jo tag ke andar hai.
+
+        document.querySelector('h2').style.backgroundColor = "blue"
+
+        // This tempH2 is node list and it will not work like array. May look like Array but doesn't work like array.
+        const tempH2 = document.querySelectorAll('h2')
+        tempH2[0].style.color = "red"
+        tempH2[1].style.color = "pink"
+        tempH2[2].style.color = "orange"
+
+        const tempH1 = document.querySelectorAll('h1')
+        tempH1[0].style.color = "black"
+        
+        
+    </script>
+</body>
+</html>

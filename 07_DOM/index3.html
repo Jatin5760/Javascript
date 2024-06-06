@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chai aur code</title>
+</head>
+<body style = "background-color: #212121; color: #fff;">
+    
+    <ul class = "language">
+        <li>Java Script</li>
+    </ul>
+</body>
+<script>
+    // This innerHTML process in not optimized it will traverse all the DOM to regulate changes
+    function addLanguage(langName){
+       const Li = document.createElement('li')
+       Li.innerHTML = `${langName}`
+       document.querySelector(`.language`).appendChild(Li)
+    }
+    addLanguage("Python")
+    addLanguage("Type Script")
+
+//  This is optimized approach and for good projects we have to use this process to add elements
+    function addOptiLanguage(langname){
+        const li = document.createElement('li')
+        li.appendChild(document.createTextNode(langname))
+        document.querySelector(".language").appendChild(li)
+    }
+    addOptiLanguage(`GoLang`)
+    addOptiLanguage(`Ruby`)
+
+    //Edit
+    const secondLang = document.querySelector("li:nth-child(2)")
+    //secondLang.innerHTML = "Mojo" (not optimized)
+    const newLi = document.createElement('li')
+    newLi.textContent = "Mojo"
+    secondLang.replaceWith(newLi)
+
+    //edit
+    const firstLang = document.querySelector("li:nth-child(1)")
+    firstLang.outerHTML = "<li>Type Script</li>"
+
+
+    // Remove
+    const lastLang = document.querySelector("li:nth-child(3)")
+    lastLang.remove()
+</script>
+</html>
