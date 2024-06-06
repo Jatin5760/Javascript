@@ -4,7 +4,8 @@ const repoCount = 50
 // console.log(name + repoCount + " Value") // This is old tarika.
 
 console.log(`Hello my name is ${name} and my repo count is ${repoCount}`) 
-// This is new way because of backtick we use string interpolation concept to concatinate strings.
+// This is new way because of backtick we use string interpolation concept to 
+//concatinate strings.
 
 
 
