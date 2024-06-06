@@ -10,8 +10,10 @@ console.log(`Hello my name is ${name} and my repo count is ${repoCount}`)
  
 
 // Declaration of String
-const gameName = new String(`Jatin-S`) //Here New is object keyword // This is object and iski key string hai and value Jatin-S hai 
-console.log(gameName)
+const gameName = new String(`Jatin-S`) 
+//Here New is object keyword // This is object and iski key string hai and value Jatin-S hai 
+console.log(gameName) 
+console.log(typeof gameName) //Object
 
 
 console.log(gameName[0])
