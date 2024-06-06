@@ -7,7 +7,7 @@ console.log(`Hello my name is ${name} and my repo count is ${repoCount}`)
 // This is new way because of backtick we use string interpolation concept to 
 //concatinate strings.
 
-
+ 
 
 // Declaration of String
 const gameName = new String(`Jatin-S`) //Here New is object keyword // This is object and iski key string hai and value Jatin-S hai 
