@@ -29,11 +29,11 @@ console.log(gameName.indexOf('n')) // Kisi bhi letter ki index bata deta hai.
 
 
 // String slicing
-const newString = gameName.substring(0,4 )
+const newString = gameName.substring(0,4 )// SubString has zero based indexing.
 console.log(newString)
 
 
-const anotherString = gameName.slice(-8,3)
+const anotherString = gameName.slice(-8,3) // Slice don't has zero based indexing.
 console.log(anotherString)
 
 
